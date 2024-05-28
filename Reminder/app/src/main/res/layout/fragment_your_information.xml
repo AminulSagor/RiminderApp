@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".aboutYou"
+    >
+    <ImageView
+        android:id="@+id/profilePhoto"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/male_user"
+        android:layout_margin="40dp"
+        android:padding="10dp"
+
+        />
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/female_user"
+        android:layout_margin="40dp"
+        android:padding="10dp"
+        android:visibility="gone"
+        />
+
+    <EditText
+        android:id="@+id/editTextNameF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aminul Islam Sagor"
+        android:textSize="25sp"
+        android:padding="8dp"
+        android:gravity="center"
+        android:layout_below="@+id/profilePhoto"
+        android:layout_margin="5dp"
+        android:background="#F7BAC5"
+        android:visibility="gone"
+        />
+
+    <TextView
+
+        android:id="@+id/nameProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name : Aminul Islam Sagor"
+        android:layout_below="@+id/profilePhoto"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        android:layout_margin="10dp"
+        />
+
+    <EditText
+        android:id="@+id/editTextEmailPhoneF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="aminulislamsagor23@gmail.com"
+        android:textSize="24sp"
+        android:padding="8dp"
+        android:gravity="center"
+        android:layout_below="@+id/editTextNameF"
+        android:layout_margin="5dp"
+        android:background="#F7BAC5"
+        android:visibility="gone"
+        />
+
+    <TextView
+
+        android:id="@+id/emailOrPhoneProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email : aminulislamsagor23@gmail.com"
+        android:layout_below="@+id/nameProfile"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        />
+    <EditText
+        android:id="@+id/editTextDateOfBirthProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="20 november 1999"
+        android:textSize="24sp"
+        android:padding="8dp"
+        android:gravity="center"
+        android:layout_below="@+id/editTextEmailPhoneF"
+        android:layout_margin="5dp"
+        android:background="#F7BAC5"
+        android:visibility="gone"
+        />
+
+    <TextView
+
+        android:id="@+id/dateOfBirthProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date of birth : 20 november 1999"
+        android:layout_below="@+id/emailOrPhoneProfile"
+        android:gravity="center"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/linerForRadioProfile"
+        android:background="#F7BAC5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/editTextDateOfBirthProfile"
+        android:gravity="center_vertical"
+        android:layout_margin="5dp"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/genderF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_margin="5dp"
+            android:layout_weight="0.5"/>
+
+        <RadioGroup
+            android:id="@+id/genderRadioGroupF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="16dp"
+            android:layout_weight="2.5"
+            android:weightSum="3">
+
+            <RadioButton
+                android:id="@+id/radioMaleF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_weight="1"/>
+
+
+            <RadioButton
+                android:id="@+id/radioFemaleF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_weight="1"/>
+
+
+            <RadioButton
+                android:id="@+id/radioOtherF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_weight="1"/>
+
+        </RadioGroup>
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/EditTextAddressProfileF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Barishal"
+        android:textSize="24sp"
+        android:padding="8dp"
+        android:gravity="center"
+        android:layout_below="@+id/linerForRadioProfile"
+        android:layout_margin="5dp"
+        android:background="#F7BAC5"
+        android:visibility="gone"
+        />
+
+
+
+    <TextView
+
+        android:id="@+id/genderProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gender : Male"
+        android:layout_below="@+id/dateOfBirthProfile"
+        android:gravity="center"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+
+        />
+
+
+    <TextView
+
+        android:id="@+id/addressProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Address : Barishal"
+        android:layout_below="@+id/genderProfile"
+        android:gravity="center"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+
+        />
+    <Button
+        android:id="@+id/btnEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Click to edit"
+        android:layout_above="@+id/btnDeleteProfile"
+        android:layout_marginTop="30dp"
+        />
+
+    <Button
+        android:id="@+id/btnDeleteProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete your profile"
+        android:backgroundTint="#910000"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        />
+
+
+</RelativeLayout>
